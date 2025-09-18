@@ -10,6 +10,7 @@ Repozytorium zawiera zbiór danych zapisany w pliku **CSV** z wyznaczonymi cecha
 2. Przeprowadzi wstępne przetwarzanie (np. standaryzacja, podział na zbiór treningowy i testowy).
 3. Wytrenuje wybrany model lub kilka modeli.
 4. Dokona ewaluacji rozwiązania (np. accuracy, precision, recall, F1-score).
+5. Opisze swoje rozwiązanie.
 
 
 
@@ -56,7 +57,7 @@ W celu rozwiązania zadania prosimy o [Fork](https://docs.github.com/en/pull-req
 * Poprawność działania kodu.
 * Przejrzystość i czytelność implementacji.
 * Wykorzystanie metod klasycznego uczenia maszynowego.
-* Pomysłowość rozwiązania
+* Pomysłowość rozwiązania.
 * **Historia commitów w repozytorium** – oceniana będzie ich czytelność i spójność.
 
 Powodzenia!
