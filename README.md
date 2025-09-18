@@ -11,7 +11,7 @@ Repozytorium zawiera zbiór danych zapisany w pliku **CSV** z wyznaczonymi cecha
 3. Wytrenuje wybrany model lub kilka modeli.
 4. Dokona ewaluacji rozwiązania (np. accuracy, precision, recall, F1-score).
 
-W celu rozwiązania zadania prosimy o [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) tego repozytorium. A następnie przesłania linku do repozytorium na TUTAJ GDZIE REKRUTACJA
+
 
 
 ## Lista cech
@@ -48,7 +48,9 @@ Powierzchnia zajmowana przez płuca.
 * Kod powinien być napisany w Pythonie (np. z użyciem bibliotek `scikit-learn`, `numpy`, `pandas`, `matplotlib`).
 * Należy dodać krótki opis rozwiązania w postaci pliku [Markdown](https://www.markdownguide.org/) (`.md`).
 * Wyniki ewaluacji należy zaprezentować w czytelny sposób (np. tabela wyników, wykresy ROC/PR).
+* Kod i commity powinny być w jęzku **angielskim**, plik markdown z opisem rozwiązanie może być po polsku lub angielsku.
 
+W celu rozwiązania zadania prosimy o [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) tego repozytorium. A następnie przesłania linku do repozytorium na TUTAJ GDZIE REKRUTACJA
 ## Kryteria oceny
 
 * Poprawność działania kodu.
