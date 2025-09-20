@@ -16,7 +16,7 @@ Repozytorium zawiera zbiór danych zapisany w pliku **CSV** z wyznaczonymi cecha
 
 
 ## Lista cech
-Poniżej znajdują się cechy, które opisują obraz serca i płuc. Przy każdej cesze podana jest nazwa angielska oraz opis w języku polskim:
+Poniżej znajdują się cechy, które opisują obraz serca i płuc. Przy każdej cesze podana jest nazwa angielska (taka jak w pliku CSV) oraz opis w języku polskim:
 
 ### Lung width (Szerokość płuc)
 Odległość pomiędzy najbardziej zewnętrznymi punktami płuc w poziomie.
@@ -29,6 +29,12 @@ Stosunek szerokości serca do szerokości płuc.
 
 ### Inertia tensors (Tensory bezwładności)
 Miary opisujące rozkład pikseli serca i płuc względem osi, pozwalające uchwycić kształt i orientację obiektów.
+W pliku `.csv` znajdziesz 4 składowe tej cechy:
+- `xx` - jak piksele są rozłożone względem osi y (wydłużenie wzdłuż x)
+- `yy` - jak piksele są rozłożone względem osi x (wydłużenie wzdłuż y)
+- `xy` - rozłożenie względem osi x i y (duża wartość to obiekt obrócony)
+- `normalized_diff` - wartość skalarana na podstawie wektora, którego składowe omówiono wyżej.
+
 
 ### Inscribed circle detection (Wykrycie okręgu wpisanego)
 Promień największego okręgu, który można wpisać w obszar serca, opisujący jego symetrię i zwartość.
