@@ -1,69 +1,88 @@
-# Zadanie rekrutacyjne – Klasyfikacja serca chorego na kardiomiopatię przerostową (kardiomegalię)
+# Recruitment Task – Classification of a Heart with Hypertrophic Cardiomyopathy (Cardiomegaly)
 
-## Opis zadania
+## Task Description
 
-Twoim zadaniem jest przygotowanie rozwiązania problemu klasyfikacji serca chorego na **kardiomiopatię przerostową (kardiomegalię)** na podstawie podanych cech. Należy wykorzystać jedną z metod **klasycznego uczenia maszynowego** opisaną w pliku [ML.md](ML.md)  Celem jest zbudowanie modelu, który będzie potrafił poprawnie odróżnić zdrowe serce od serca chorego na podstawie dostępnych danych.
+Your task is to prepare a solution for the classification problem of detecting **hypertrophic cardiomyopathy (cardiomegaly)** based on the provided features. You should use one of the **classical machine learning methods** described in the [ML.md](ML.md) file.
+The goal is to build a model capable of correctly distinguishing between a healthy heart and a diseased one using the available data.
 
-Repozytorium zawiera zbiór danych zapisany w pliku **CSV** z wyznaczonymi cechami geometrycznymi i obrazowymi, które stanowią podstawę do dalszej analizy. Od kandydata oczekujemy przygotowania kodu, który:
+The repository contains a dataset stored in a **CSV** file, which includes selected geometric and imaging features serving as the basis for further analysis.
+We expect the candidate to prepare code that:
 
-1. Wczyta dane z pliku `.csv`.
-2. Przeprowadzi wstępne przetwarzanie (np. standaryzacja, podział na zbiór treningowy i testowy).
-3. Wytrenuje wybrany model lub kilka modeli.
-4. Dokona ewaluacji rozwiązania (np. accuracy, precision, recall, F1-score).
-5. Opisze swoje rozwiązanie.
+1. Loads the data from the `.csv` file.
+2. Performs preprocessing (e.g., standardization, train/test split).
+3. Trains one or more selected models.
+4. Evaluates the solution (e.g., using accuracy, precision, recall, F1-score).
+5. Provides a brief description of the approach taken.
 
+---
 
+## Feature List
 
+Below are the features describing the heart and lungs. Each feature includes its name (as used in the CSV file)
 
-## Lista cech
-Poniżej znajdują się cechy, które opisują obraz serca i płuc. Przy każdej cesze podana jest nazwa angielska (taka jak w pliku CSV) oraz opis w języku polskim:
+### Lung width
 
-### Lung width (Szerokość płuc)
-Odległość pomiędzy najbardziej zewnętrznymi punktami płuc w poziomie.
+The horizontal distance between the outermost points of the lungs.
 
-### Heart width (Szerokość serca)
-Maksymalna szerokość serca mierzona w poziomie.
+### Heart width
 
-### CR ratio (Wskaźnik CR)
-Stosunek szerokości serca do szerokości płuc.
+The maximum horizontal width of the heart.
 
-### Inertia tensors (Tensory bezwładności)
-Miary opisujące rozkład pikseli serca i płuc względem osi, pozwalające uchwycić kształt i orientację obiektów.
-W pliku `.csv` znajdziesz 4 składowe tej cechy:
-- `xx` - jak piksele są rozłożone względem osi y (wydłużenie wzdłuż x)
-- `yy` - jak piksele są rozłożone względem osi x (wydłużenie wzdłuż y)
-- `xy` - rozłożenie względem osi x i y (duża wartość to obiekt obrócony)
-- `normalized_diff` - wartość skalarana na podstawie wektora, którego składowe omówiono wyżej.
+### CR ratio
 
+The ratio of heart width to lung width.
 
-### Inscribed circle detection (Wykrycie okręgu wpisanego)
-Promień największego okręgu, który można wpisać w obszar serca, opisujący jego symetrię i zwartość.
+### Inertia tensors
 
-### Polygon Area Ratio (Wskaźnik pola wielokąta)
-Stosunek pola wielokąta obejmującego kontur serca do rzeczywistego pola serca.
+Measures describing the distribution of heart and lung pixels relative to the coordinate axes, capturing the shape and orientation of the objects.
+The `.csv` file contains 4 components of this feature:
 
-### Heart perimeter (Obwód serca)
-Długość obwodu konturu serca.
+* `xx` – how pixels are distributed relative to the y-axis (elongation along x)
+* `yy` – how pixels are distributed relative to the x-axis (elongation along y)
+* `xy` – distribution relative to both x and y axes (a high value indicates rotation of the object)
+* `normalized_diff` – a scalar value derived from the vector whose components are described above
 
-### Heart area (Pole powierzchni serca)
-Powierzchnia zajmowana przez serce.
+### Inscribed circle detection
 
-### Lung area (Pole powierzchni płuc)
-Powierzchnia zajmowana przez płuca.
+The radius of the largest circle that can be inscribed within the heart area, describing its symmetry and compactness.
 
-## Oczekiwania
-* Kod powinien być napisany w Pythonie (np. z użyciem bibliotek `scikit-learn`, `numpy`, `pandas`, `matplotlib`).
-* Należy dodać krótki opis rozwiązania w postaci pliku [Markdown](https://www.markdownguide.org/) (`.md`).
-* Wyniki ewaluacji należy zaprezentować w czytelny sposób (np. tabela wyników, wykresy ROC/PR).
-* Kod i commity powinny być w jęzku **angielskim**, plik markdown z opisem rozwiązanie może być po polsku lub angielsku.
+### Polygon Area Ratio
 
-W celu rozwiązania zadania prosimy o [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) tego repozytorium. A następnie przesłania linku do repozytorium na TUTAJ GDZIE REKRUTACJA
-## Kryteria oceny
+The ratio of the area of the polygon enclosing the heart contour to the actual area of the heart.
 
-* Poprawność działania kodu.
-* Przejrzystość i czytelność implementacji.
-* Wykorzystanie metod klasycznego uczenia maszynowego.
-* Pomysłowość rozwiązania.
-* **Historia commitów w repozytorium** – oceniana będzie ich czytelność i spójność.
+### Heart perimeter
 
-Powodzenia!
+The length of the heart contour.
+
+### Heart area
+
+The area occupied by the heart.
+
+### Lung area
+
+The area occupied by the lungs.
+
+---
+
+## Expectations
+
+* The code should be written in Python (e.g., using libraries such as `scikit-learn`, `numpy`, `pandas`, `matplotlib`).
+* Include a short description of the solution in a [Markdown](https://www.markdownguide.org/) (`.md`) file.
+* Present evaluation results clearly (e.g., results table, ROC/PR curves).
+* Code and commit messages should be written in **English**; the Markdown description may be in either Polish or English.
+
+To complete the task, please [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository and submit the link to your fork **to the recruitment contact point**.
+
+---
+
+## Evaluation Criteria
+
+* Correctness of the code.
+* Clarity and readability of the implementation.
+* Use of classical machine learning methods.
+* Creativity of the solution.
+* **Commit history in the repository** – clarity and consistency will be evaluated.
+
+---
+
+**Good luck!**
