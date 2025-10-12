@@ -9,10 +9,12 @@ The repository contains a dataset stored in a **CSV** file, which includes selec
 We expect the candidate to prepare code that:
 
 1. Loads the data from the `.csv` file.
-2. Performs preprocessing (e.g., standardization, train/test split).
-3. Trains one or more selected models.
-4. Evaluates the solution (e.g., using accuracy, precision, recall, F1-score).
-5. Provides a brief description of the approach taken.
+2. Split data into train and test set
+3. Performs preprocessing (e.g., standardization, train/test split).
+4. Trains one or more selected models.
+5. Evaluate the solution using cross-validation 
+6. Evaluate the solution on test data set (e.g., using accuracy, precision, recall, F1-score).
+7. Provides a brief description of the approach taken.
 
 ---
 
