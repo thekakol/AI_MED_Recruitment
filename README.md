@@ -8,17 +8,21 @@ The goal is to build a model capable of correctly distinguishing between a healt
 The repository contains a dataset stored in a **CSV** file, which includes selected geometric and imaging features serving as the basis for further analysis.
 We expect the candidate to prepare code that:
 
-1. Loads the data from the `task_data.csv` file.
+1. Load the data from the `task_data.csv` file.
 2. Split data into train and test set
-3. Performs preprocessing (e.g., standardization, train/test split).
-4. Trains one or more selected models.
+3. Perform preprocessing (e.g., standardization, train/test split).
+4. Train one or more selected models.
 5. Evaluate the solution using [cross-validation](https://www.geeksforgeeks.org/machine-learning/cross-validation-using-k-fold-with-scikit-learn/) 
 6. Evaluate the solution on test data set (e.g., using accuracy, precision, recall, F1-score).
-7. Provides a brief description of the approach taken.
+7. Provide a brief description of the approach taken.
 
 ---
 
-## Feature List
+## Data csv
+
+First column is a photo ID, second column provides a information if heart was daigonsed with cardmiomegaly. 
+- `1` for postive diagnose (not positve for patient)
+- `0` for negative diagnose 
 
 Below are the features describing the heart and lungs. Each feature includes its name (as used in the CSV file)
 
