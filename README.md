@@ -8,7 +8,7 @@ The goal is to build a model capable of correctly distinguishing between a healt
 The repository contains a dataset stored in a **CSV** file, which includes selected geometric and imaging features serving as the basis for further analysis.
 We expect the candidate to prepare code that:
 
-1. Loads the data from the `.csv` file.
+1. Loads the data from the `task_data.csv` file.
 2. Split data into train and test set
 3. Performs preprocessing (e.g., standardization, train/test split).
 4. Trains one or more selected models.
@@ -73,7 +73,9 @@ The area occupied by the lungs.
 * Present evaluation results clearly (e.g., results table, ROC/PR curves).
 * Code and commit messages should be written in **English**; the Markdown description may be in either Polish or English.
 
-To complete the task, please [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository and submit the link to your fork **to the recruitment contact point**.
+To complete the task, please [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository and submit the link to your fork **to your recruitment form**.
+
+We recommend using [jupyter notebooks](https://jupyter.org/).
 
 ---
 
