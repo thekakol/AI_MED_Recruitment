@@ -44,7 +44,7 @@ The `.csv` file contains 4 components of this feature:
 * `xy` – distribution relative to both x and y axes (a high value indicates rotation of the object)
 * `normalized_diff` – a scalar value derived from the vector whose components are described above
 
-### Inscribed circle detection
+### Inscribed circle radius
 
 The radius of the largest circle that can be inscribed within the heart area, describing its symmetry and compactness.
 
