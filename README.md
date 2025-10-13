@@ -12,7 +12,7 @@ We expect the candidate to prepare code that:
 2. Split data into train and test set
 3. Performs preprocessing (e.g., standardization, train/test split).
 4. Trains one or more selected models.
-5. Evaluate the solution using cross-validation 
+5. Evaluate the solution using [cross-validation](https://www.geeksforgeeks.org/machine-learning/cross-validation-using-k-fold-with-scikit-learn/) 
 6. Evaluate the solution on test data set (e.g., using accuracy, precision, recall, F1-score).
 7. Provides a brief description of the approach taken.
 
