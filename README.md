@@ -88,6 +88,13 @@ We recommend using **Jupyter Notebooks** for the implementation.
 
 ---
 
+## Example model
+
+In the [Example](Example/) folder, you will find a fully implemented machine learning project that demonstrates the entire workflow — from data loading and preprocessing to model training, evaluation, and final conclusions.
+This example is designed to help beginner machine learning enthusiasts understand the structure of a complete project. It contains all the necessary information and practical guidance needed to successfully complete the recruitment task.
+
+---
+
 ## Evaluation Criteria
 
 * Correctness of the code.  
